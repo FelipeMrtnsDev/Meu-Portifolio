@@ -1,0 +1,26 @@
+@import './home/navbar.scss';
+@import './home/pageBody.scss';
+@import './about/aboutMe.scss';
+@import './projects/carrousel2.scss';
+@import './skills/skills.scss';
+@import './skills/languages.scss';
+
+@font-face {
+    font-family:'kaleok' ;
+    src: url('../font/kaleko-205-round-book.ttf') format('truetype');
+    font-weight: 100;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'kaleok';
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}

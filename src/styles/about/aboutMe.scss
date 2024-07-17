@@ -1,0 +1,36 @@
+.about {
+    max-width: 100%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    &__img {
+        width: 400px;
+        height: 500px;
+        border-radius: 50px;
+        margin-right: 48px;
+        z-index: 2;
+    }
+
+    &__specs {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 2;
+        
+        h2 {
+            margin-top: 16px;
+            z-index: 2;
+        }
+
+        table {
+            margin-bottom: 16px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 12px;
+            z-index: 2;
+        }
+    }
+}
