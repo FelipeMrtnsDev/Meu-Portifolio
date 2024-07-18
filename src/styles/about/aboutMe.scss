@@ -1,3 +1,5 @@
+@import '../configs/cores.scss';
+
 .about {
     max-width: 100%;
     margin-top: 64px;
@@ -27,7 +29,7 @@
 
         table {
             margin-bottom: 16px;
-            border: 2px solid black;
+            border: 2px solid $main-black;
             border-radius: 10px;
             padding: 12px;
             z-index: 2;

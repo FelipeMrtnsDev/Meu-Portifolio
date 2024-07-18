@@ -1,5 +1,7 @@
+@import '../configs/cores.scss';
+
 .navbar {
-    background-color: black;
+    background-color: $main-black;
     border-radius: 100px;
     margin-top: 20px;
     position: sticky;
@@ -7,6 +9,8 @@
     padding: 4px;
     margin-bottom: 1px;
     z-index: 999;
+    max-width: 1024px;
+    margin: 0 auto;
 
     &__ul {
         list-style-type: none;
@@ -22,7 +26,7 @@
 
             &__link {
                 text-decoration: none;
-                color: white;
+                color: $main-white;
                 padding-inline: 30px;
                 padding-block: 20px;
                 border-radius: 40px;
@@ -32,6 +36,6 @@
 }
 
 .actived {
-    background-color: orange;
+    background-color: $main-orange;
     transition: all ease 0.5s;
 }

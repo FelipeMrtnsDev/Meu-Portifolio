@@ -1,0 +1,10 @@
+@import '../configs/cores.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    background-color: $main-orange;
+}

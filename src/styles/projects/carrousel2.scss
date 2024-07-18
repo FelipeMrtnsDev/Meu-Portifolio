@@ -1,3 +1,5 @@
+@import '../configs/cores.scss';
+
 .body-carrousel {
     display: flex;
     padding: 0 35px;
@@ -21,7 +23,7 @@
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: orange;
+    background: $main-orange;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
@@ -79,10 +81,11 @@
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
-    background: rgb(235, 227, 227);
+    background: $white-100;
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 8px;
+    box-shadow: 0px 0px 1cap2 rgb(212, 212, 212);
 }
 
 .carousel .card .img {
@@ -94,7 +97,7 @@
     width: 150%;
     height: 200px;
     object-fit: cover;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px $main-black;
 }
 
 .carousel .card h2 {
@@ -103,10 +106,6 @@
     margin: 30px 0 5px;
 }
 
-.carousel .card span {
-    color: #6A6D78;
-    font-size: 1.31rem;
-}
 
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
@@ -122,7 +121,7 @@
 
 .project-link {
     text-decoration: none;
-    color: orange;
+    color: $main-orange;
     font-size: 1em;
     font-weight: bold;
 }
@@ -131,6 +130,6 @@
     border-radius: 5px;
     padding: 7px;
     border: none;
-    background-color: #fff;
-    box-shadow: 0px 0px 4px rgb(146, 139, 139);
+    background-color: $main-white;
+    box-shadow: 0px 0px 4px $boxshadow;
 }

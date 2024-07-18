@@ -1,0 +1,60 @@
+@import '../configs/cores.scss';
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.5em;
+        margin-block: 64px;
+    }
+
+    &__contact-input {
+        border: 1px solid $main-black;
+        padding: 12px;
+        border-radius: 40px;
+        width: 700px;
+        margin-bottom: 200px;
+
+        &__form {
+            display: flex;
+            justify-content: space-between;
+
+            .form-button {
+                border: none;
+                border-radius: 40px;
+                background-color: $main-orange;
+                padding: 16px;
+                padding-inline: 32px;
+                cursor: pointer;
+            }
+
+            &__name {
+                margin-left: 16px;
+                width: 450px;
+                height: 30px;
+                border: none;
+                font-size: 1.3em;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &--container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.bi-envelope {
+    background-color: rgb(249, 176, 107);
+    padding: 16px;
+    border-radius: 50%;
+}

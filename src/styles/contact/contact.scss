@@ -1,0 +1,95 @@
+@import '../configs/cores.scss';
+
+.contact-h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.contact {
+    margin-top: 16px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    span {
+        color: $main-orange;
+    }
+
+    &__h3 {
+        font-size: 3em;
+    }
+
+    &__social-media {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.icon-img {
+    display: flex;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+}
+
+.instagram-div {
+    width: 70px;
+    height: 70px;
+    border: 3px solid $main-black;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.instagram-div:hover {
+    background-image: linear-gradient( #833ab4, #fd1d1d, #fcb045, #833ab4);
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.instagram-div:not(:hover) {
+    transition: 0.5s;
+}
+
+.linkedin-div {
+    width: 70px;
+    height: 70px;
+    border: 3px solid $main-black;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.linkedin-div:hover {
+    background-image: linear-gradient( #270e84,#007dbb);
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.linkedin-div:not(:hover) {
+    transition: 0.5s;
+}
+
+.github-div {
+    width: 70px;
+    height: 70px;
+    border: 3px solid $main-black;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.github-div:hover {
+    background-image: linear-gradient(to bottom right,#232bc7,#0f0d8e, #171515);
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.github-div:not(:hover) {
+    transition: 0.5s;
+}
