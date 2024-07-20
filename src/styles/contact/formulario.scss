@@ -16,7 +16,7 @@
         padding: 12px;
         border-radius: 40px;
         width: 700px;
-        margin-bottom: 200px;
+        // margin-bottom: 200px;
 
         &__form {
             display: flex;
@@ -57,4 +57,15 @@
     background-color: rgb(249, 176, 107);
     padding: 16px;
     border-radius: 50%;
+}
+
+.email-enviado {
+    margin-bottom: 200px;
+
+    &-p {
+        display: none;
+        color: rgb(15, 221, 15);
+        font-size: 1.3em;
+        font-weight: bold;
+    }
 }

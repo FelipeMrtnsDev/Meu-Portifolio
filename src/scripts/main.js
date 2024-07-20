@@ -80,3 +80,32 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+$(document).ready(function() {
+    $('.menu-hamburger').click(function() {
+        let $navbarMobile = $('.links-mobile');
+        if ($navbarMobile.width() === 0) {
+            $navbarMobile.css('display', 'flex').animate({ width: '50%' }, 300);
+        } else {
+            $navbarMobile.animate({ width: '0' }, 300, function() {
+                $(this).css('display', 'none');
+            });
+        }
+    });
+});
+
+const formulario = document.getElementById('formulario-contact');
+
+$(document).ready(function() {
+    $('#formulario-contact').submit(function(e) {
+        e.preventDefault();
+        $('.email-enviado-p').slideDown();
+
+
+
+        // if($('#formulario-contact').val() === '') {
+        //     $('.email-enviado').slideUp();
+        // } 
+    })
+})
