@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const requisicao = async () => {
         try {
-            const response = await fetch("https://api-portifolio-1ho9.onrender.com/portifolio/projetos");
+            const response = await fetch("https://api-portifolio-1-cmxd.onrender.com/portifolio/projetos");
             const projetos = await response.json();
             console.log("Dados recebidos da API:", projetos);
 
@@ -170,7 +170,7 @@ $(document).ready(function() {
             email: email,
         };
 
-        fetch('https://api-portifolio-1ho9.onrender.com/email/enviar', {
+        fetch('https://api-portifolio-1-cmxd.onrender.com/email/enviar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
