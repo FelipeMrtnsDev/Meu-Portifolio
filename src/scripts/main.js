@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const requisicao = async () => {
         try {
-            const response = await fetch("https://api-portifolio-rho.vercel.app/portifolio/projetos");
+            const response = await fetch("https://api-portifolio-ten.vercel.app/portifolio/projetos");
             const projetos = await response.json();
             console.log("Dados recebidos da API:", projetos);
 
@@ -170,7 +170,7 @@ $(document).ready(function() {
             email: email,
         };
 
-        fetch('https://api-portifolio-rho.vercel.app/email/enviar', {
+        fetch('https://api-portifolio-ten.vercel.app/email/enviar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
