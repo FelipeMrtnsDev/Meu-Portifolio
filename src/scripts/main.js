@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const requisicao = async () => {
         try {
-            const response = await fetch("https://api-portifolio-1-cmxd.onrender.com/portifolio/projetos");
+            const response = await fetch("https://api-portifolio-d8tnyrh4z-felipemartinsdevs-projects.vercel.app/portifolio/projetos");
             const projetos = await response.json();
             console.log("Dados recebidos da API:", projetos);
 
@@ -170,7 +170,7 @@ $(document).ready(function() {
             email: email,
         };
 
-        fetch('https://api-portifolio-1-cmxd.onrender.com/email/enviar', {
+        fetch('https://api-portifolio-d8tnyrh4z-felipemartinsdevs-projects.vercel.app/email/enviar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
